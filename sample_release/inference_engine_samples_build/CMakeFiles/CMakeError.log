@@ -1,0 +1,513 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7a9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7a9c.dir/build.make CMakeFiles/cmTC_d7a9c.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7a9c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_d7a9c.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_d7a9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7a9c.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_d7a9c.dir/CheckSymbolExists.c.o  -o cmTC_d7a9c -rdynamic 
+CMakeFiles/cmTC_d7a9c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d7a9c.dir/build.make:97: recipe for target 'cmTC_d7a9c' failed
+make[1]: *** [cmTC_d7a9c] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d7a9c/fast' failed
+make: *** [cmTC_d7a9c/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2969/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2969.dir/build.make CMakeFiles/cmTC_c2969.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2969.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_c2969.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_c2969
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2969.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_c2969.dir/CheckFunctionExists.c.o  -o cmTC_c2969 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c2969.dir/build.make:97: recipe for target 'cmTC_c2969' failed
+make[1]: *** [cmTC_c2969] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c2969/fast' failed
+make: *** [cmTC_c2969/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7422/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7422.dir/build.make CMakeFiles/cmTC_b7422.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7422.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_b7422.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_b7422
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7422.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_b7422.dir/CheckSymbolExists.c.o  -o cmTC_b7422 -rdynamic 
+CMakeFiles/cmTC_b7422.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b7422.dir/build.make:97: recipe for target 'cmTC_b7422' failed
+make[1]: *** [cmTC_b7422] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b7422/fast' failed
+make: *** [cmTC_b7422/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1ae4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1ae4.dir/build.make CMakeFiles/cmTC_f1ae4.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1ae4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_f1ae4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_f1ae4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1ae4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_f1ae4.dir/CheckFunctionExists.c.o  -o cmTC_f1ae4 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f1ae4.dir/build.make:97: recipe for target 'cmTC_f1ae4' failed
+make[1]: *** [cmTC_f1ae4] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1ae4/fast' failed
+make: *** [cmTC_f1ae4/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fa15/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0fa15.dir/build.make CMakeFiles/cmTC_0fa15.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fa15.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_0fa15.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_0fa15
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fa15.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_0fa15.dir/CheckSymbolExists.c.o  -o cmTC_0fa15 -rdynamic 
+CMakeFiles/cmTC_0fa15.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0fa15.dir/build.make:97: recipe for target 'cmTC_0fa15' failed
+make[1]: *** [cmTC_0fa15] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0fa15/fast' failed
+make: *** [cmTC_0fa15/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7150a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7150a.dir/build.make CMakeFiles/cmTC_7150a.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7150a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_7150a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_7150a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7150a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_7150a.dir/CheckFunctionExists.c.o  -o cmTC_7150a -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7150a.dir/build.make:97: recipe for target 'cmTC_7150a' failed
+make[1]: *** [cmTC_7150a] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7150a/fast' failed
+make: *** [cmTC_7150a/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9235f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9235f.dir/build.make CMakeFiles/cmTC_9235f.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9235f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_9235f.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_9235f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9235f.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_9235f.dir/CheckSymbolExists.c.o  -o cmTC_9235f -rdynamic 
+CMakeFiles/cmTC_9235f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9235f.dir/build.make:97: recipe for target 'cmTC_9235f' failed
+make[1]: *** [cmTC_9235f] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9235f/fast' failed
+make: *** [cmTC_9235f/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9bca1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9bca1.dir/build.make CMakeFiles/cmTC_9bca1.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9bca1.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_9bca1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_9bca1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bca1.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_9bca1.dir/CheckFunctionExists.c.o  -o cmTC_9bca1 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9bca1.dir/build.make:97: recipe for target 'cmTC_9bca1' failed
+make[1]: *** [cmTC_9bca1] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9bca1/fast' failed
+make: *** [cmTC_9bca1/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_47e53/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47e53.dir/build.make CMakeFiles/cmTC_47e53.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47e53.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_47e53.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_47e53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47e53.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_47e53.dir/CheckSymbolExists.c.o  -o cmTC_47e53 -rdynamic 
+CMakeFiles/cmTC_47e53.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_47e53.dir/build.make:97: recipe for target 'cmTC_47e53' failed
+make[1]: *** [cmTC_47e53] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_47e53/fast' failed
+make: *** [cmTC_47e53/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c58f4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c58f4.dir/build.make CMakeFiles/cmTC_c58f4.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c58f4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_c58f4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_c58f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c58f4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_c58f4.dir/CheckFunctionExists.c.o  -o cmTC_c58f4 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c58f4.dir/build.make:97: recipe for target 'cmTC_c58f4' failed
+make[1]: *** [cmTC_c58f4] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c58f4/fast' failed
+make: *** [cmTC_c58f4/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e5daf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5daf.dir/build.make CMakeFiles/cmTC_e5daf.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5daf.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_e5daf.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_e5daf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5daf.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_e5daf.dir/CheckSymbolExists.c.o  -o cmTC_e5daf -rdynamic 
+CMakeFiles/cmTC_e5daf.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e5daf.dir/build.make:97: recipe for target 'cmTC_e5daf' failed
+make[1]: *** [cmTC_e5daf] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e5daf/fast' failed
+make: *** [cmTC_e5daf/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2c12c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c12c.dir/build.make CMakeFiles/cmTC_2c12c.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c12c.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_2c12c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_2c12c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c12c.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_2c12c.dir/CheckFunctionExists.c.o  -o cmTC_2c12c -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2c12c.dir/build.make:97: recipe for target 'cmTC_2c12c' failed
+make[1]: *** [cmTC_2c12c] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2c12c/fast' failed
+make: *** [cmTC_2c12c/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8cd07/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8cd07.dir/build.make CMakeFiles/cmTC_8cd07.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cd07.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_8cd07.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_8cd07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cd07.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_8cd07.dir/CheckSymbolExists.c.o  -o cmTC_8cd07 -rdynamic 
+CMakeFiles/cmTC_8cd07.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8cd07.dir/build.make:97: recipe for target 'cmTC_8cd07' failed
+make[1]: *** [cmTC_8cd07] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8cd07/fast' failed
+make: *** [cmTC_8cd07/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e8569/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e8569.dir/build.make CMakeFiles/cmTC_e8569.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8569.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_e8569.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_e8569
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8569.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_e8569.dir/CheckFunctionExists.c.o  -o cmTC_e8569 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e8569.dir/build.make:97: recipe for target 'cmTC_e8569' failed
+make[1]: *** [cmTC_e8569] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e8569/fast' failed
+make: *** [cmTC_e8569/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0aa5a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0aa5a.dir/build.make CMakeFiles/cmTC_0aa5a.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0aa5a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_0aa5a.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_0aa5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0aa5a.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_0aa5a.dir/CheckSymbolExists.c.o  -o cmTC_0aa5a -rdynamic 
+CMakeFiles/cmTC_0aa5a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0aa5a.dir/build.make:97: recipe for target 'cmTC_0aa5a' failed
+make[1]: *** [cmTC_0aa5a] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0aa5a/fast' failed
+make: *** [cmTC_0aa5a/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c9ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c9ff.dir/build.make CMakeFiles/cmTC_0c9ff.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c9ff.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_0c9ff.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_0c9ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c9ff.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_0c9ff.dir/CheckFunctionExists.c.o  -o cmTC_0c9ff -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0c9ff.dir/build.make:97: recipe for target 'cmTC_0c9ff' failed
+make[1]: *** [cmTC_0c9ff] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0c9ff/fast' failed
+make: *** [cmTC_0c9ff/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb5ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb5ef.dir/build.make CMakeFiles/cmTC_eb5ef.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb5ef.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c++11   -o CMakeFiles/cmTC_eb5ef.dir/CheckSymbolExists.c.o   -c /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_eb5ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb5ef.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c++11    CMakeFiles/cmTC_eb5ef.dir/CheckSymbolExists.c.o  -o cmTC_eb5ef -rdynamic 
+CMakeFiles/cmTC_eb5ef.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eb5ef.dir/build.make:97: recipe for target 'cmTC_eb5ef' failed
+make[1]: *** [cmTC_eb5ef] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eb5ef/fast' failed
+make: *** [cmTC_eb5ef/fast] Error 2
+
+File /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_044eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_044eb.dir/build.make CMakeFiles/cmTC_044eb.dir/build
+make[1]: Entering directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_044eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_044eb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_044eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_044eb.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    CMakeFiles/cmTC_044eb.dir/CheckFunctionExists.c.o  -o cmTC_044eb -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_044eb.dir/build.make:97: recipe for target 'cmTC_044eb' failed
+make[1]: *** [cmTC_044eb] Error 1
+make[1]: Leaving directory '/opt/sample_release/inference_engine_samples_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_044eb/fast' failed
+make: *** [cmTC_044eb/fast] Error 2
+
+
